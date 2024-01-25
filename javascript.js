@@ -8,7 +8,7 @@ function getComputerChoice(choices) {
 const computerSelection = getComputerChoice(choices);
 console.log(computerSelection);
 
-const playerSelection = prompt("Make your move");
+const playerSelection = prompt("Make your move").toLowerCase();
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
